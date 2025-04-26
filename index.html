@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <!-- saved from url=(0025)https://wolfchen.top/tag/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta charset="utf-8">
   
   <title>NovelAI tag在线生成器</title>
   <meta name="description" content="帮你生成NovelAI的tag">
   <meta name="keywords" content="novelai,tags,tag生成器,novel ai,ai画图">
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://wolfchen.top/tag/favicon.ico">
   <link rel="stylesheet" href="./index_files/layui.css" media="all">
   <link rel="stylesheet" href="./index_files/style.css" media="all">
+  <link rel="stylesheet" href="./css/main.css">
   <!--link rel="stylesheet" href="./css/style.css"  media="all"-->
   <!--link rel="stylesheet" href="../css/layui.mobile.css"  media="all"-->
   <script src="./index_files/hm.js"></script><script src="./index_files/jquery.min.js"></script><style type="text/css"></style>
@@ -24,55 +25,68 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-<link id="layuicss-laydate" rel="stylesheet" href="./index_files/laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./index_files/layer.css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./index_files/code.css" media="all"><style class="mpa-style-fix ImageGatherer">.FotorFrame{position:fixed!important}</style><style class="mpa-style-fix SideFunctionPanel">.weui-desktop-online-faq__wrp{top:304px!important;bottom:unset!important}.weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch{width:38px!important}</style></head>  
-<body mpa-version="8.0.11" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg" style=""><div style="width:96%;margin-left:2%;margin-top:1vw;">
+<link id="layuicss-laydate" rel="stylesheet" href="./index_files/laydate.css" media="all">
+<link id="layuicss-layer" rel="stylesheet" href="./index_files/layer.css" media="all">
+<link id="layuicss-skincodecss" rel="stylesheet" href="./index_files/code.css" media="all">
+
+</head>  
+
+
+<body mpa-version="8.0.11" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg" style="">
+    <div style="width:96%;margin-left:2%;margin-top:1vw;">
 <h2 style="float: left;">NovelAI tag生成器 V2.1</h2>
-<button class="layui-btn layui-btn-normal layui-btn-sm" style="margin-left: 5px;" onclick="showhint()">帮助</button>
-<button class="layui-btn layui-btn-normal layui-btn-sm" style="margin-left: 5px;" onclick="showds()">打赏作者</button>
-<button class="layui-btn layui-btn-normal layui-btn-sm" style="margin-left: 5px;" onclick="showjd()">开发计划</button>
-<a target="_blank" href="https://wolfchen.top/tag/jump.html?from=scq"><button class="layui-btn layui-btn-normal layui-btn-sm" style="margin-left: 5px;">NovelAI资源大全</button></a>
-<a target="_blank" href="http://jiangnanuniversity.mikecrm.com/bw0ylIm"><button class="layui-btn layui-btn-normal layui-btn-sm" style="margin-left: 5px;">提交意见、建议、tag组合</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-QQ交流群：<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=9mVueIKl5dxPd7Vfxwt0u2T166sPofgl&amp;jump_from=webapi&amp;authKey=A+Bhd2xNnm8jpL9R9VZLs+RjXq6HAdmrO9AD5jMFOrdYO4PziVl8MPtTuQhW2e+1">830981665</a>(有空位)&nbsp;&nbsp;
-<a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=jFbKnnGw">600037848</a>(已满)&nbsp;&nbsp;
-<a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=NXpj2oHc">542363433</a>(有空位)
-<a target="_blank" href="https://github.com/WolfChen1996/NovelAI-tag-generator" style="float: right;">github已开源</a>
+
+<button class="layui-btn layui-btn-normal layui-btn-sm bh-btn" onclick="showhint()">帮助</button>
+<button class="layui-btn layui-btn-normal layui-btn-sm bh-btn" onclick="showds()">打赏作者</button>
+<button class="layui-btn layui-btn-normal layui-btn-sm bh-btn" onclick="showjd()">开发计划</button>
+
+<a rel="noopener" target="_blank" href="https://wolfchen.top/tag/jump.html?from=scq">
+    <button class="layui-btn layui-btn-normal layui-btn-sm bh-btn">NovelAI资源大全</button>
+</a>
+<a rel="noopener" target="_blank" href="http://jiangnanuniversity.mikecrm.com/bw0ylIm">
+    <button class="layui-btn layui-btn-normal layui-btn-sm bh-btn">提交意见、建议、tag组合</button>
+</a>
+<a rel="noopener" target="_blank" href="https://github.com/WolfChen1996/NovelAI-tag-generator" class="bh-right">github已开源</a>
 <hr>
 
-<form class="layui-form" style="width:100%">
+<form class="layui-form" id="form_switcher">
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">English</label>
-<input type="checkbox" lay-filter="switchenglish" lay-skin="switch" lay-text="ON|OFF" checked=""><div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+        <label class="layui-form-label">English</label>
+        <input type="checkbox" lay-filter="switchenglish" lay-skin="switch" lay-text="ON|OFF" checked="">
+        <div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em></div>
+    </div>
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">中文</label>
-<input type="checkbox" lay-filter="switchchinese" lay-skin="switch" lay-text="ON|OFF" checked=""><div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+    <label class="layui-form-label"">中文</label>
+    <input type="checkbox" lay-filter="switchchinese" lay-skin="switch" lay-text="ON|OFF" checked=""><div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em><i></i></div>
+    </div>
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">减权+</label>
-<input type="checkbox" lay-filter="switchminus" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+    <label class="layui-form-label">减权+</label>
+    <input title="" type="checkbox" lay-filter="switchminus" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
+    </div>
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">降权-</label>
-<input type="checkbox" lay-filter="switchplus" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+    <label class="layui-form-label">降权-</label>
+    <input type="checkbox" lay-filter="switchplus" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
+    </div>
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">删除X</label>
-<input type="checkbox" lay-filter="switchdel" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+    <label class="layui-form-label">删除X</label>
+    <input type="checkbox" lay-filter="switchdel" lay-skin="switch" lay-text="ON|OFF"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
+    </div>
 
-<div class="layui-input-block" style="display: inline-block;margin-left:0;">
-<label class="layui-form-label" style="font-weight:bold;width: auto;">加权符号切换</label>
-<input type="checkbox" lay-filter="switchicon" lay-skin="switch" lay-text="( )|{ }"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>{ }</em><i></i></div>
-</div>
+    <div class="layui-input-block">
+    <label class="layui-form-label">加权符号切换</label>
+    <input type="checkbox" lay-filter="switchicon" lay-skin="switch" lay-text="( )|{ }"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>{ }</em><i></i></div>
+    </div>
 
 
-<div class="layui-input-block" style="float:right"><label class="layui-form-label" style="font-weight:bold;width: auto;">R18</label>
-<input type="checkbox" name="switch" lay-skin="switch" lay-text="ON|OFF" lay-filter="switchr18" value="1"><div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
+    <div class="layui-input-block bh-right">
+        <label class="layui-form-label">R18</label>
+    <input type="checkbox" name="switch" lay-skin="switch" lay-text="ON|OFF" lay-filter="switchr18" value="1">
+    <div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>OFF</em><i></i></div>
 </div></form>
 
 <div id="elements-container" style="min-height: 100px;height: auto;line-height: 20px;padding: 6px 10px;resize: vertical;">
@@ -1520,69 +1534,8 @@ QQ交流群：<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=9mVueIK
 <div align="center">
 <button class="layui-btn layui-btn-primary" onclick="closeds()">关闭</button>
 </div>
+
 <div style="width: 60%;float: left;">
-<h2>打赏清单：(按时间顺序，截至到2022.11.01 - 00:10)</h2>    
-<table border="5" style="line-height:20px">
-<tbody><tr><th>昵称</th><th>金额</th><th>留言</th><th>反馈</th></tr>
-
-<tr><td>	**霖	</td><td>	30.00	</td><td>	胸部大小神马的也请快一点添加吧	</td><td>	抱歉，已添加！感谢支持！	</td></tr>
-<tr><td>		</td><td>	5.00	</td><td>	感谢！希望有动作词条的组合（提示，例如双手脑后+举手露腋	</td><td>	会有的；你说的这个已添加；你们可以在顶上的表单里提交一下想要的tag组合。	</td></tr>
-<tr><td>	flag	</td><td>	5.00	</td><td>	支持！	</td><td>	感谢支持！	</td></tr>
-<tr><td>	**秦	</td><td>	5.00	</td><td>	好用，替群友感谢你	</td><td>	感谢你！！	</td></tr>
-<tr><td>	Koma Swift	</td><td>	5.00	</td><td>	支持一下	</td><td>	感谢支持！	</td></tr>
-<tr><td>	花北夜	</td><td>	25.00	</td><td>	希望大佬多出一点常用组合(づ ●─● )づ	</td><td>	嗯呐，平时遇到的都放进来了，你们也可以提交	</td></tr>
-<tr><td>	**峰	</td><td>	20.00	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	**美	</td><td>	1.00	</td><td>	加油大佬	</td><td>	嗯嗯！在加油了，感谢！	</td></tr>
-<tr><td>	CHMCG	</td><td>	10.00	</td><td>	做的太好了，必须支持，要做下去啊要！	</td><td>	嘿嘿感谢支持！！	</td></tr>
-<tr><td>	/	</td><td>	1.00	</td><td>	谢谢你 陌生人	</td><td>	谢谢你，好心人！	</td></tr>
-<tr><td>	**儒	</td><td>	20.00	</td><td>	中国式英雄	</td><td>	过奖过奖，感谢支持	</td></tr>
-<tr><td>	*仁	</td><td>	2.00	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	**扬	</td><td>	10.00	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	汨罗渊水乱拍波	</td><td>	10.00	</td><td>	评价是请尽力做下去	</td><td>	嗯嗯！会的，放心！	</td></tr>
-<tr><td>	/	</td><td>	5.14	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	**桢	</td><td>	50.00	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	何志恒	</td><td>	18.00	</td><td>	有考虑过众包翻译吗crowdin之类的想贡献一下力量	</td><td>	嗯，我那个在线文档，后面那些tag的页签，都是所有人可以 编辑器的其实……	</td></tr>
-<tr><td>	乘着这场风	</td><td>	5.00	</td><td>	膜拜大佬	</td><td>	嘿嘿嘿	</td></tr>
-<tr><td>	O0OºοÖöΟ	</td><td>	10.00	</td><td>	感谢大佬，希望能多添加一些环境tag	</td><td>	会的，鞋子刚弄完，已经开始整环境了	</td></tr>
-<tr><td>	YeeWay	</td><td>	10.00	</td><td>	加油啊！	</td><td>	加油ing	</td></tr>
-<tr><td>	浮伤年华-忧伤说笑	</td><td>	2.00	</td><td>	啥时候能整个3w多的tag啊，真期待啊	</td><td>	一直在整噢	</td></tr>
-<tr><td>	Biù Biù~	</td><td>	50.00	</td><td>	加油	</td><td>	加油！	</td></tr>
-<tr><td>	Des	</td><td>	10.00	</td><td>	求加搜索和英文首字母首排列功能	</td><td>	搜索会有的，首字母排列……emmmmmmmm等等看	</td></tr>
-<tr><td>	/	</td><td>	10.00	</td><td>	支持大佬	</td><td>	感谢支持！	</td></tr>
-<tr><td>	/	</td><td>	10.00	</td><td>	整理不易，工具很好用，感谢！	</td><td>	感谢支持！	</td></tr>
-<tr><td>	清茶于酒	</td><td>	10.00	</td><td>	留言有限制……综合tag亲测有效	</td><td>	嗯，我知道，组合、句子，都是有效的。此外有些tag和组合，虽然根本没有在模型的tag里，但是也能生成相关图片，比如【温泉hot spring】</td></tr>
-<tr><td>	清茶于酒	</td><td>	20.00	</td><td>	望大佬能整理更多综合tag：展示足、XX在小腹、掰开XX等	</td><td>	目前还没整理到R18，但是你提到的这3个先在常用组合里加上了；后期会加入自行添加tag的功能。	</td></tr>
-<tr><td>	/	</td><td>	10.00	</td><td>	你才是真正的英雄	</td><td>	过奖过奖，感谢支持	</td></tr>
-<tr><td>	张梦阳	</td><td>	2.00	</td><td>	感谢大佬	</td><td>	感谢小伙伴！	</td></tr>
-<tr><td>	**峰	</td><td>	20.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	纷纷纭纭	</td><td>	5.00	</td><td>	感谢分享	</td><td>	感谢打赏	</td></tr>
-<tr><td>	/	</td><td>	6.48	</td><td>	就你有R18，字词	</td><td>	嘿嘿嘿	</td></tr>
-<tr><td>	荭	</td><td>	5.00	</td><td>	谢谢，希望在更新点哦	</td><td>	嗯呐，鞋袜的快整理好了	</td></tr>
-<tr><td>	/	</td><td>	5.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	**航	</td><td>	5.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	🍒🍒🍒🍒	</td><td>	5.00	</td><td>	大佬加油啊 希望能加上权重	</td><td>	会的，等等党终将胜利	</td></tr>
-<tr><td>	**昊	</td><td>	6.00	</td><td>	学生自己没钱没法支持多少，只希望大佬能坚持	</td><td>	放心，我会把这个项目完善到我理想的样子	</td></tr>
-<tr><td>	霂凨	</td><td>	5.00	</td><td>	谢谢大佬，支持一下	</td><td>	谢谢你，陌生人	</td></tr>
-<tr><td>	**尘	</td><td>	10.00	</td><td>		</td><td>	谢谢支持	</td></tr>
-<tr><td>	空	</td><td>	5.00	</td><td>	感谢大佬，希望大佬继续做下去	</td><td>	会的，放心	</td></tr>
-<tr><td>	qaz	</td><td>	10.00	</td><td>	增添tag的优雅的选择方式是个很有用的功能，坚持下去啊	</td><td>	但是我在想，是[]减权更重要，还是反tag更重要，或许要加上拖拽功能	</td></tr>
-<tr><td>	*航	</td><td>	50.00	</td><td>	加油	</td><td>	谢谢支持	</td></tr>
-<tr><td>	/	</td><td>	3.00	</td><td>	钱不多。但如果可以的话，希望环境tag多一点。其他的到处都是	</td><td>	嗯嗯，会有的，再等等！	</td></tr>
-<tr><td>	/	</td><td>	5.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	/	</td><td>	2.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	上穴八目	</td><td>	5.00	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	堂吉诃德	</td><td>	5.00	</td><td>	谢谢你hero	</td><td>	谢谢你，陌生人	</td></tr>
-<tr><td>	/	</td><td>	1.00	</td><td>	谢谢啦，大佬，学生没钱，支持一下	</td><td>	谢谢你，富有的学生	</td></tr>
-<tr><td>	蛮蛮蛮	</td><td>	4.08	</td><td>	/	</td><td>	谢谢支持	</td></tr>
-<tr><td>	生活就是schwer	</td><td>	1.00	</td><td>	作为一名小白，感谢大佬的分享和整理。	</td><td>	感谢支持！	</td></tr>
-<tr><td>	/	</td><td>	2.00	</td><td>	/	</td><td>	感谢支持！	</td></tr>
-<tr><td>	洛河	</td><td>	2.00	</td><td>	感谢大佬	</td><td>	感谢你，陌生人！	</td></tr>
-<tr><td>	岩	</td><td>	1.00	</td><td>		</td><td>	感谢支持！	</td></tr>
-
-    
-    
-</tbody></table>
-
 </div>
 <div align="center" style="width: 37%;float: right;">
     <h2>打赏作者</h2><br><img style="width: 100%;" src="./index_files/both.jpg">
@@ -2008,4 +1961,26 @@ $(function() {
 
 </script>
 
-<div class="mpa-sc mpa-plugin-article-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-article-gatherer"></div><div class="mpa-sc mpa-plugin-image-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer"></div><div class="mpa-sc mpa-plugin-page-clipper mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-page-clipper"></div><div class="mpa-sc mpa-plugin-text-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer"></div><div class="mpa-sc mpa-plugin-video-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer"></div><div class="mpa-sc mpa-plugin-side-function-panel mpa-new mpa-rootsc" data-z="110" style="display: block;" id="mpa-rootsc-side-function-panel"></div><div class="mpa-sc mpa-plugin-notifier mpa-new mpa-rootsc" data-z="120" style="display: block;" id="mpa-rootsc-notifier"></div><div class="mpa-sc mpa-plugin-notification-manager mpa-new mpa-rootsc" data-z="130" style="display: block;" id="mpa-rootsc-notification-manager"></div></body></html>
+<div class="mpa-sc mpa-plugin-article-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-article-gatherer">
+
+</div>
+<div class="mpa-sc mpa-plugin-image-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer">
+
+</div>
+<div class="mpa-sc mpa-plugin-page-clipper mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-page-clipper">
+
+</div>
+<div class="mpa-sc mpa-plugin-text-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer">
+
+</div><div class="mpa-sc mpa-plugin-video-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer">
+
+</div>
+<div class="mpa-sc mpa-plugin-side-function-panel mpa-new mpa-rootsc" data-z="110" style="display: block;" id="mpa-rootsc-side-function-panel">
+
+</div><div class="mpa-sc mpa-plugin-notifier mpa-new mpa-rootsc" data-z="120" style="display: block;" id="mpa-rootsc-notifier">
+
+</div><div class="mpa-sc mpa-plugin-notification-manager mpa-new mpa-rootsc" data-z="130" style="display: block;" id="mpa-rootsc-notification-manager">
+
+</div>
+</body>
+</html>

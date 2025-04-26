@@ -1,0 +1,29 @@
+.FotorFrame {
+    position: fixed !important
+}
+
+.weui-desktop-online-faq__wrp {
+    top: 304px !important;
+    bottom: unset !important
+}
+
+.weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch {
+    width: 38px !important
+}
+
+.bh-btn{
+    margin-left: 5px;
+}
+
+.bh-right{
+    float: right;
+}
+
+#form_switcher{
+    width:100%;
+}
+
+#form_switcher .layui-input-label, #form_switcher .layui-input-block{
+    display: inline-block;
+    margin-left:0;
+}
